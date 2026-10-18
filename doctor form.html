@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doctor Appointment Form</title>
+  <link rel="stylesheet" href="doctor form.css">
+</head>
+<body>
+  <div class="page">
+
+    
+    <div class="image-side">
+      <div> 
+      <img src=fotos-CCDMI3dfnIo-unsplash.jpg alt="Doctor Image">
+    </div>
+      
+    </div>
+
+    
+    <div class="form-side">
+      <h1>Doctor Form</h1>
+      <hr>
+
+      <form>
+
+        <div class="row">
+          <label for="date">Appointment Date</label>
+          <div class="field"><input type="date" id="date" name="date"></div>
+        </div>
+
+        <div class="row">
+          <label for="time">Appointment Time</label>
+          <div class="field"><input type="time" id="time" name="time"></div>
+        </div>
+
+        <div class="row">
+          <label>Name</label>
+          <div class="field two">
+            <input type="text" required name="first" placeholder="First">
+            <input type="text" required name="last" placeholder="Last">
+          </div>
+        </div>
+
+        <div class="row">
+          <label>Gender</label>
+          <div class="field">
+            <label class="inline">Male <input type="radio" name="gender" value="male" required></label>
+            <label class="inline">Female <input type="radio" name="gender" value="female" required></label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="phone">Phone</label>
+          <div class="field"><input type="text" id="phone" name="phone" placeholder="0000000000"></div>
+        </div>
+
+        <div class="row">
+          <label>Address</label>
+          <div class="field two">
+            <input type="text" >
+            <input type="text" >
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="query">Your Query</label>
+          <div class="field"><textarea id="query" name="query" rows="4"></textarea></div>
+        </div>
+
+        <div class="row">
+          <label>Appointment Type</label>
+          <div class="field">
+            <p>Select which appointment type(s) you require</p>
+            <label class="check"><input type="checkbox" name="type" value="cervix"> Cervix checkup</label>
+            <label class="check"><input type="checkbox" name="type" value="heart"> Heart checkup</label>
+            <label class="check"><input type="checkbox" name="type" value="eye"> Eye check-up</label>
+            <label class="check"><input type="checkbox" name="type" value="hearing"> Hearing Test</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <span></span>
+          <div class="field"><button type="submit">Send</button></div>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
